@@ -1,69 +1,84 @@
-<!DOCTYPE html>
-<html>
-
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Kuhaku.github.com : " />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Kuhaku.github.com</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/kuhaku">View on GitHub</a>
-
-          <h1 id="project_title">Kuhaku.github.com</h1>
-          <h2 id="project_tagline"></h2>
-
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+<!DOCTYPE HTML PUBLIC "ISO/IEC 15445:2000//DTD HTML//EN">
+<html lang="ja">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="sw.css">
+		<title>ぁ単語広報室</title>
+	</head>
+	<body>
+		<h1>ぁ単語　広報室</h1>
+		<hr>
+		<h2>ぁ単語について</h2>
+			<p>Twitterであやしいわーるど＠上海の状況を報告したりするbotです。2012/2/2うまれ。</p>
+		<hr>
+		<h2>各種機能の説明</h2>
+			<h3>単語カウント</h3>
+			<p>1時間おきに単語や単語を結合したものをカウントします。</p>
+			<h4>カウント基準</h4>
+				<p>基本的には名詞をカウントしますが、
+				Twitterの文字数制限を考慮して、接頭詞と名詞が連接している場合や名詞と名詞が連接している場合には、
+				それらを1語として扱います。
+				また、単語を連結したものとそれに含まれている単語の回数が同じ場合には、複合語を優先して単語のみの方をカットします。
+				たとえば、「プリキュア:5」と「プリキュア握手:5」の場合には「プリキュア握手」を採用します。</p>
+				<p>また1語のみの単語や代名詞もカットしています。</p>
+				<p>他にもストップワードも弾きます。</p>
+				<div>
+					<p>ストップワードリスト</p>
+					<p>あと, こいつ, 一度, 実際, 貴殿, 相手, 作品, 一つ, 名前, 掲示板, 時代, 余裕, 辺り, 自分, 投稿, 感じ, アレ, 意味, 過信, 理屈, 名称, 単位, 通知, 仕事, 情報, 日本, 関係, 状態, 特定, 終了, 言葉, ネット, 日本人, 朝鮮人, 漏れ, 空白, 最初, ネタ, 一人, ご飯, 韓国, 地元, 会社, 男性, 発端, 作者, 世界, 仕組み, 画像, 動画, 番組, テレビ, 感覚, 貴殿ら, 雰囲気, 空気, 最後, 住人, 人間, キャラ, アニメ, うち, 流れ, 基本, 本人, 原作, 三人, 冒頭, 特徴, 二人, 背景, 条件, 確率, 中身, 空間, あたり, シーン, 人たち, 人生, アイツ, 久々, 大人, 主人公, そう, 存在, さそう, 気持ち, 問題, ･･･, 期待, レス, ただ, わけ, 投稿日, 投稿者, 指摘, 設定, 気分, 何年, とこ, そいつ, そいつら, ～♪, ～～, 〜〜〜, 何度, 女の子, 部分, 箇所, 一緒, 理由, 事項, 外出, さん, 参考, しよう, ちゃん, っぷり, たち, 子たち, 連中, 人物, 程度, ーーー </p>
+				</div>
+				<p>ついでに半角/全角やローマ字の大文字/小文字の正規化も行なってます。</p>
+				<h4>単語マップ生成</h4>
+				<p>単語カウントのうち上位何件かに注目して、その単語と同じ文に含まれる単語群の分布を主成分分析して、二次元上の画像に配置します。
+				単語が大きさは単語の出現回数、
+				単語と単語の距離は関連度の強さを表しています。</p>
+				<p><a href="http://www.slideshare.net/kuhaku/ss-15815177">単語マップ生成手順をスライドで公開してます。</a></p>
+				<p>過去の単語マップは<a href="http://www.flickr.com/photos/sw_words/">Flickrから見ることができます。</a></p>
+			<h3>変な投稿</h3>
+				<p>1時間前の投稿を単語分割して、それをマルコフ連鎖して変な文章を生成します。</p>
+			<h3>要約</h3>
+				<p>1時間おきにレスが多くついた投稿を加工して枚挙します。</p>
+				<p>投稿の加工は、助詞を抜く、動詞を原形に戻す、3回以上連続する文字を3文字に短縮するなどです。</p>
+			<h3>人気URL</h3>
+				<p>2時間おきにレスが多くついたURLを紹介します。</p>
+				<p>ただし小町や転送のアドレスはカットしてます。ロッテン対策はしてません。</p>
+			<h3>空白 心の俳句</h3>
+				<p>575調の過去ログを投稿します。</p>
+			<h3>返信</h3>
+				<p>@sw_words宛にレスするとぁ単語がレスします。</p>
+				<h4>おまけ機能</h4>
+				<ul>
+					<li>「〜の評判」とレスするとでたらめ評判分析します。</li>
+					<li>「俳句」とレスすると一句詠みます。</li>
+					<li>おちこんでるとたまに慰めます。おちんこでると</li>
+				  	<li>話題がないけどとにかく話したい時は「ねたふり」とレス。</li>
+					<li>一方的に言いたい時は「レス不要」と付けてください。</li>
+				</ul>
+		<hr>
+		<h2>謝辞</h2>
+			<ul>
+				<li>あやしいわーるど＠上海</li>
+			</ul>
+			<p>いつも面白い投稿をしてくれる＠上海の皆さんくすこヽ(´ー｀)ノ</p>
+			<ul>
+				<li><a href="http://web.archive.org/web/20070611123943/http://www.geocities.jp/strange_ov/">本家sov</a></li>
+				<li><a href="http://web.archive.org/web/20070106010912/http://strange.egoism.jp/sovs/">sov退避</a></li>
+				<li><a href="http://yaesov.appspot.com/">＠上海 ログ読み</a></li>
+				<li><a href="http://twitter.com/fuba_recorder">fuba_recorder</a></li>
+			</ul>
+			<p>これらに影響を受けてぁ単語を作りました。くすこヽ(´ー｀)ノ</p>
+			<ul>
+				<li><a href ="http://usamin.mine.nu/cgi/swlog">qwerty全文検索</a></li>
+				<li><a href ="http://gikogi.com/bbslog/qwerty">＠検索</a></li>
+			</ul>
+			<p>ぁ単語の返信機能でこれらを使っていますヽ(´ー｀)ノくすこ</p>
+			<ul>
+				<li><a href ="http://mecab.googlecode.com/svn/trunk/mecab/doc/index.html">MeCab</a></li>
+				<li><a href ="http://matplotlib.sourceforge.net/">matplotlib</a></li>
+				<li><a href ="http://www.csie.ntu.edu.tw/~cjlin/liblinear/">LIBLINEAR</a></li>
+				<li><a href ="https://github.com/tweepy/tweepy">tweepy</a></li>				<li><a href ="http://www.crummy.com/software/BeautifulSoup/">BeautifulSoup</a></li>
+				<li><a href ="http://stuvel.eu/flickrapi">Beej's Python Flickr API</a></li>
+			</ul>
+			<p>ぁ単語はこれらのライブラリを使っています。くすこヽ(´ー｀)ノ</p>
+	</body>
 </html>
+
