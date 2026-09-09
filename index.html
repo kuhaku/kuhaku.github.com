@@ -1,24 +1,28 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="ja">
-    <head>
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" type="text/css" href="sw.css">
-        <meta http-equiv="Content-Script-Type" content="text/javascript">
-        <title>kuhaku の GitHub</title>
-        <script type="text/javascript">
-        function add(){
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="sw.css">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <title>kuhaku の GitHub</title>
+    <script type="text/javascript">
+        function add() {
             var emoticon = document.getElementById("emoticon").innerHTML;
             document.getElementById("emoticon").innerText = emoticon + "人(;´Д`)";
         }
-        </script>
-    </head>
-    <body>
-        <h1>kuhaku の GitHub</h1>
-        <ul>
-            <li><a href="amark">ぁMark (あやしいGPUベンチマーク)</a></li>
-            <li><a href="p2p-babanuki">ババ活 (P2P対戦ミニゲーム集)</a></li>
-            <li><a href="https://github.com/kuhaku/sw-link">あやしいわーるどリンク集</a></li>
-        </ul>
-        <p id="emoticon" onclick="add()">(;´Д`)</p>
-    </body>
+    </script>
+</head>
+
+<body>
+    <h1>kuhaku の GitHub</h1>
+    <ul>
+        <li><a href="amark">ぁMark (あやしいGPUベンチマーク)</a></li>
+        <li><a href="p2p-babanuki">ババ活 (P2P対戦ミニゲーム集)</a></li>
+        <li><a href="https://github.com/kuhaku/sw-link">あやしいわーるどリンク集</a></li>
+        <li><a href="ime.html">あやしいわーるど用IMEユーザー辞書</a></li>
+    </ul>
+    <p id="emoticon" onclick="add()">(;´Д`)</p>
+</body>
+
 </html>
